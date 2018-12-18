@@ -5,7 +5,12 @@ import random
 import asyncio
 import time
 print("Bot Is Online! And Ready To Spam")
- 
+
+@bot.event
+async def on_ready():
+    print("Bot Is Online! And Ready To Spam")
+	
+	
 ##SPAM COMMAND##
 	@bot.command(pass_context=True)
 	async def spam(ctx):
